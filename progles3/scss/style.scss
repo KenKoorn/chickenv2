@@ -1,0 +1,170 @@
+$yellow: #ffffe0;
+$orange: #ffae00;
+$yellowgold: #ffdb58;
+$black: #000;
+$blue: #272377;
+$gradient: linear-gradient(to right, #cac531, #f3f9a7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: $yellow;
+}
+
+.chicken {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background-color: $yellow;
+  border-radius: 50%;
+
+  .head {
+   position: absolute;
+    top: 20px;
+    left: 60px;
+    width: 80px;
+    height: 80px;
+    background-color: $yellowgold;
+    border-radius: 50%;
+
+    .beak {
+      position: absolute;
+      top: 40px;
+      left: 50px;
+      width: 10px;
+      height: 30px;
+      background-color: $orange;
+      transform: rotate(-70deg);
+      border-radius: 0 0 50% 50%;
+    }
+
+    .beakbeak { 
+      position: absolute;
+      top: 48px;
+      left: 50px;
+      width: 5px;
+      height: 30px;
+      background-color: $orange;
+      transform: rotate(-50deg);
+      border-radius: 0 0 50% 50%;
+    }
+    
+
+    .eye {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: $black;
+      position: absolute;
+    }
+
+    .left-eye {
+      top: 30px;
+      left: 15px;
+    }
+
+    .right-eye {
+      top: 30px;
+      left: 40px;
+    }
+  }
+
+  .body {
+    position: absolute;
+    top: 90px;
+    left: 60px;
+    width: 80px;
+    height: 100px;
+    background-color: $yellowgold;
+    border-radius: 50%;
+  }
+
+  .wing {
+    position: absolute;
+    width: 60px;
+    height: 100px;
+    background-color: $yellowgold;
+    top: 90px;
+    border-radius: 50%;
+
+    &.left-wing {
+      left: 25px;
+      transform: rotate(45deg);
+    }
+
+    &.right-wing {
+      left: 100px;
+      transform: rotate(-45deg);
+    }
+  }
+
+  .tail {
+    position: absolute;
+    top: 120px;
+    left: 100px;
+    width: 20px;
+    height: 60px;
+    background-color: $yellowgold;
+    transform: rotate(-20deg);
+  }
+
+  .leg {
+    position: absolute;
+    width: 20px;
+    height: 80px;
+    background-color: $yellowgold;
+    bottom: 0;
+
+    &.left-leg {
+      left: 120px;
+      transform: rotate(10deg);
+    }
+
+    &.right-leg {
+      left: 75px;
+      transform: rotate(-10deg);
+    }
+  }
+
+  .feather {
+    position: absolute;
+    width: 17px;
+    height: 60px;
+    background-color: #ffae00;
+    bottom: -15px;
+    transform: rotate(10deg);
+    left: 59px;
+
+    &.left-feather{
+      transform: rotate(-10deg);
+      left: 19px;
+      bottom: -15px;
+    }
+
+    
+  }
+
+  .hair{
+    position: absolute;
+    width: 10px;
+    height: 30px;
+    background-color: $yellowgold;
+    bottom: 160px;
+    transform: rotate(20deg);
+    left: 95px;
+  }
+
+  .hairhair{
+    position: absolute;
+    width: 10px;
+    height: 30px;
+    background-color: $yellowgold;
+    bottom: 160px;
+    transform: rotate(-30deg);
+    left: 90px;
+  }
+}

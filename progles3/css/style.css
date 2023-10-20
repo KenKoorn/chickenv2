@@ -1,0 +1,147 @@
+.chicken {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #ffffe0;
+}
+.chicken .head {
+  position: absolute;
+  top: 20px;
+  left: 60px;
+  width: 80px;
+  height: 80px;
+  background-color: #ffdb58;
+  border-radius: 50%;
+}
+.chicken .head .beak {
+  position: absolute;
+  top: 40px;
+  left: 50px;
+  width: 10px;
+  height: 30px;
+  background-color: #ffae00;
+  transform: rotate(-70deg);
+  border-radius: 0 0 50% 50%;
+}
+.chicken .head .beakbeak {
+  position: absolute;
+  top: 48px;
+  left: 50px;
+  width: 5px;
+  height: 30px;
+  background-color: #ffae00;
+  transform: rotate(-50deg);
+  border-radius: 0 0 50% 50%;
+}
+.chicken .head .eye {
+  width: 20px;
+  height: 20px;
+  background-color: #000;
+  border-radius: 50%;
+  position: absolute;
+}
+.chicken .head .left-eye {
+  position: absolute;
+  top: 30px;
+  left: 15px;
+}
+.chicken .head .right-eye {
+  position: absolute;
+  top: 30px;
+  left: 40px;
+}
+.chicken .body {
+  position: absolute;
+  top: 90px;
+  left: 60px;
+  width: 80px;
+  height: 80px;
+  background-color: #ffdb58;
+  border-radius: 50%;
+}
+.chicken .wing {
+  width: 60px;
+  height: 60px;
+  background-color: #ffdb58;
+  border-radius: 50%;
+  position: absolute;
+  top: 90px;
+  left: 25px;
+}
+.chicken .wing.left-wing {
+  transform: rotate(45deg);
+}
+.chicken .wing.right-wing {
+  transform: rotate(-45deg);
+}
+.chicken .tail {
+  position: absolute;
+  top: 120px;
+  left: 100px;
+  width: 20px;
+  height: 60px;
+  background-color: #ffdb58;
+  transform: rotate(-20deg);
+}
+.chicken .leg {
+  width: 20px;
+  height: 80px;
+  background-color: #ffdb58;
+  bottom: 0;
+}
+.chicken .leg.left-leg {
+  position: absolute;
+  top: 0;
+  left: 120px;
+  transform: rotate(10deg);
+}
+.chicken .leg.right-leg {
+  position: absolute;
+  top: 0;
+  left: 75px;
+  transform: rotate(-10deg);
+}
+.chicken .feather {
+  width: 17px;
+  height: 60px;
+  background-color: #ffae00;
+  bottom: -15px;
+  transform: rotate(10deg);
+  position: absolute;
+  top: 0;
+  left: 59px;
+}
+.chicken .feather.left-feather {
+  transform: rotate(-10deg);
+  position: absolute;
+  top: 0;
+  left: 19px;
+  bottom: -15px;
+}
+.chicken .hair {
+  width: 10px;
+  height: 30px;
+  background-color: #ffdb58;
+  bottom: 160px;
+  transform: rotate(20deg);
+  position: absolute;
+  top: 0;
+  left: 95px;
+}
+.chicken .hairhair {
+  width: 10px;
+  height: 30px;
+  background-color: #ffdb58;
+  bottom: 160px;
+  transform: rotate(-30deg);
+  position: absolute;
+  top: 0;
+  left: 90px;
+}
+
+/*# sourceMappingURL=style.css.map */
